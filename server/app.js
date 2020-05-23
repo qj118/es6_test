@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(require('connect-livereload')()); // 页面变更自动刷新
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 

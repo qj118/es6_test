@@ -1,7 +1,5 @@
 import gulp from 'gulp';
 import gulpif from 'gulp-if';
-import concat from 'gulp-concat';
-import webpack from 'webpack';
 import gulpWebpack from 'webpack-stream';
 import named from 'vinyl-named';
 import livereload from 'gulp-livereload';
@@ -20,9 +18,9 @@ gulp.task('scripts', () => {
         .pipe(named())
         .pipe(gulpWebpack({
             module: {
-                loaders: [{
+                rules: [{
                     test: /\.js$/,
-                    loader: 'babel'
+                    loader: 'babel-loader'
                 }]
             }
         }), null, (err, stats) => {
