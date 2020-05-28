@@ -1,2 +1,2 @@
 //import 'babel-polyfill';
-import "./class/obj";
+import "./class/iter";
