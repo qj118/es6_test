@@ -30,6 +30,7 @@
     "gulp-sequence": "^1.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
+    "jquery": "^3.5.1",
     "require-dir": "^1.2.0",
     "server": "file:server",
     "vinyl-named": "^1.1.0",
